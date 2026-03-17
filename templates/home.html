@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+            <a href="{{ url_for('home') }}">Home</a> |
+            <a href="{{ url_for('about') }}">About</a>
+    </nav>
+
+    <h1>Welcome to Flask Basic Project</h1>
+    <p>This is a simple Flask application to learn project setup.</p>
+    <p>You've successfully set up a flask project</p>
+
+    <div>
+        <h1>Project Structure</h1>
+        <ul>
+            <li>app.py</li>
+            <li>config.py</li>
+            <li>templates</li>
+            <li>static</li>
+        </ul>
+        </ul>
+    </div>
+</body>
+</html>
